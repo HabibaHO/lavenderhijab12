@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الدفع</title>
+</head>
+<body>
+    <h1>صفحة الدفع</h1>
+    <form>
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- زر استدعاء الدالة -->
+        <button type="button" onclick="redirectToConfirmationPage()">Done</button>
+    </form>
+
+    <script>
+        // دالة التوجيه إلى صفحة confirmation
+        function redirectToConfirmationPage() {
+            window.location.href = "confirmation.html"; // التوجيه إلى صفحة confirmation
+        }
+    </script>
+</body>
+</html>
